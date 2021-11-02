@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:web_page_docker/app/shared/base_colors.dart';
+import 'package:web_dashboard_docker/app/shared/base_colors.dart';
 
 class BaseTheme {
   static ThemeData get lightTheme {

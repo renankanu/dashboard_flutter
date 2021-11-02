@@ -5,12 +5,12 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "web_page_docker",
+            "name": "web_dashboard_docker",
             "request": "launch",
             "type": "dart"
         },
         {
-            "name": "web_page_docker (profile mode)",
+            "name": "web_dashboard_docker (profile mode)",
             "request": "launch",
             "type": "dart",
             "flutterMode": "profile"

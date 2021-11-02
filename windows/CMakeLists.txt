@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.15)
-project(web_page_docker LANGUAGES CXX)
+project(web_dashboard_docker LANGUAGES CXX)
 
-set(BINARY_NAME "web_page_docker")
+set(BINARY_NAME "web_dashboard_docker")
 
 cmake_policy(SET CMP0063 NEW)
 

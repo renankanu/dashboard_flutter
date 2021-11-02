@@ -1,6 +1,6 @@
 {
-    "name": "web_page_docker",
-    "short_name": "web_page_docker",
+    "name": "web_dashboard_docker",
+    "short_name": "web_dashboard_docker",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

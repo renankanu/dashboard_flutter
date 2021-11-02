@@ -1,4 +1,4 @@
-# web_page_docker
+# web_dashboard_docker
 
 A new Flutter project.
 

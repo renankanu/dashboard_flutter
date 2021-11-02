@@ -1,8 +1,8 @@
 cmake_minimum_required(VERSION 3.10)
 project(runner LANGUAGES CXX)
 
-set(BINARY_NAME "web_page_docker")
-set(APPLICATION_ID "br.com.renankanu.web_page_docker")
+set(BINARY_NAME "web_dashboard_docker")
+set(APPLICATION_ID "br.com.renankanu.web_dashboard_docker")
 
 cmake_policy(SET CMP0063 NEW)
 

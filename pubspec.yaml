@@ -1,4 +1,4 @@
-name: web_page_docker
+name: web_dashboard_docker
 version: 1.0.0+1
 publish_to: none
 description: A new Flutter project.

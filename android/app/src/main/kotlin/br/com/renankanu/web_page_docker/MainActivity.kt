@@ -1,4 +1,4 @@
-package br.com.renankanu.web_page_docker
+package br.com.renankanu.web_dashboard_docker
 
 import io.flutter.embedding.android.FlutterActivity
 

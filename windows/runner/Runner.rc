@@ -92,10 +92,10 @@ BEGIN
             VALUE "CompanyName", "br.com.renankanu" "\0"
             VALUE "FileDescription", "A new Flutter project." "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "web_page_docker" "\0"
+            VALUE "InternalName", "web_dashboard_docker" "\0"
             VALUE "LegalCopyright", "Copyright (C) 2021 br.com.renankanu. All rights reserved." "\0"
-            VALUE "OriginalFilename", "web_page_docker.exe" "\0"
-            VALUE "ProductName", "web_page_docker" "\0"
+            VALUE "OriginalFilename", "web_dashboard_docker.exe" "\0"
+            VALUE "ProductName", "web_dashboard_docker" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END

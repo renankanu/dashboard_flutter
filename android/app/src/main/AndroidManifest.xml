@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="br.com.renankanu.web_page_docker">
+    package="br.com.renankanu.web_dashboard_docker">
    <application
-        android:label="web_page_docker"
+        android:label="web_dashboard_docker"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"
