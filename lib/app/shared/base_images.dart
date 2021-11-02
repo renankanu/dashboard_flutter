@@ -9,4 +9,5 @@ class BaseImages {
   static const String cart = 'assets/images/cart.svg';
   static const String settings = 'assets/images/settings.svg';
   static const String user = 'assets/images/user.svg';
+  static const String search = 'assets/images/search.svg';
 }
