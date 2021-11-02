@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:web_dashboard_docker/app/modules/home/components/side_menu.dart';
 
 import '../controllers/home_controller.dart';
 
@@ -8,14 +9,19 @@ class HomeView extends GetView<HomeController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('HomeView'),
-        centerTitle: true,
-      ),
-      body: const Center(
-        child: Text(
-          'HomeView is working',
-          style: TextStyle(fontSize: 20),
+      body: SafeArea(
+        child: Row(
+          children: [
+            const Expanded(
+              child: SideMenu(),
+            ),
+            Expanded(
+              flex: 5,
+              child: Container(
+                color: Colors.yellow,
+              ),
+            ),
+          ],
         ),
       ),
     );
