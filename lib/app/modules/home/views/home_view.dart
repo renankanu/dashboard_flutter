@@ -13,6 +13,7 @@ class HomeView extends GetView<HomeController> {
     return Scaffold(
       body: SafeArea(
         child: Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             if (Responsive.isDesktop(context))
               const Expanded(
