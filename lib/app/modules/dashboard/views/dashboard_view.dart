@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:web_dashboard_docker/app/modules/dashboard/components/header.dart';
+import 'package:web_dashboard_docker/app/modules/dashboard/components/my_files.dart';
+import 'package:web_dashboard_docker/app/modules/dashboard/components/recent_files.dart';
 import 'package:web_dashboard_docker/app/modules/dashboard/components/storage_details.dart';
+import 'package:web_dashboard_docker/app/utils/responsive.dart';
 
 import '../controllers/dashboard_controller.dart';
 
@@ -20,16 +23,23 @@ class DashboardView extends GetView<DashboardController> {
               children: [
                 Expanded(
                   flex: 5,
-                  child: Container(
-                    height: 500,
-                    color: Colors.white,
+                  child: Column(
+                    children: [
+                      const MyFiles(),
+                      const SizedBox(height: 16),
+                      const RecentFiles(),
+                      if (Responsive.isMobile(context))
+                        const SizedBox(height: 16),
+                      if (Responsive.isMobile(context)) const StorageDetails(),
+                    ],
                   ),
                 ),
-                const SizedBox(width: 16),
-                const Expanded(
-                  flex: 2,
-                  child: StorageDetails(),
-                ),
+                if (!Responsive.isMobile(context)) const SizedBox(width: 16),
+                if (!Responsive.isMobile(context))
+                  const Expanded(
+                    flex: 2,
+                    child: StorageDetails(),
+                  ),
               ],
             )
           ],
