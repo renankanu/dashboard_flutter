@@ -17,7 +17,7 @@ class MyFiles extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Text(
-              "My Files",
+              "Meus arquivos",
               style: Theme.of(context).textTheme.subtitle1,
             ),
             ElevatedButton.icon(
@@ -29,7 +29,7 @@ class MyFiles extends StatelessWidget {
               ),
               onPressed: () {},
               icon: const Icon(Icons.add),
-              label: const Text("Add New"),
+              label: const Text("Adicionar"),
             ),
           ],
         ),

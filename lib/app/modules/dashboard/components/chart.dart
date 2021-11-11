@@ -20,6 +20,8 @@ class Chart extends StatelessWidget {
               startDegreeOffset: -90,
               sections: paiChartSelectionDatas,
             ),
+            swapAnimationDuration: const Duration(milliseconds: 150),
+            swapAnimationCurve: Curves.linear,
           ),
           Positioned.fill(
             child: Column(
