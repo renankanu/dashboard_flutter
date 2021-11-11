@@ -10,4 +10,8 @@ class BaseImages {
   static const String settings = 'assets/images/settings.svg';
   static const String user = 'assets/images/user.svg';
   static const String search = 'assets/images/search.svg';
+  static const String documents = 'assets/images/documents.svg';
+  static const String media = 'assets/images/media.svg';
+  static const String folder = 'assets/images/folder.svg';
+  static const String unknown = 'assets/images/unknown.svg';
 }
