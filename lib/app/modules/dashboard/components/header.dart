@@ -3,6 +3,7 @@ import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
 import 'package:web_dashboard_docker/app/shared/base_colors.dart';
 import 'package:web_dashboard_docker/app/shared/base_images.dart';
+import 'package:web_dashboard_docker/app/utils/responsive.dart';
 
 class Header extends StatelessWidget {
   const Header({
@@ -13,11 +14,21 @@ class Header extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        Text(
-          'Dashboard',
-          style: Get.textTheme.headline6,
-        ),
-        const Spacer(flex: 2),
+        if (!Responsive.isDesktop(context))
+          IconButton(
+            icon: const Icon(
+              Icons.menu,
+              color: Colors.white,
+            ),
+            onPressed: () {},
+          ),
+        if (!Responsive.isMobile(context))
+          Text(
+            'Dashboard',
+            style: Get.textTheme.headline6,
+          ),
+        if (!Responsive.isMobile(context))
+          Spacer(flex: Responsive.isDesktop(context) ? 2 : 1),
         const Expanded(
           child: SearchField(),
         ),
