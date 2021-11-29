@@ -56,18 +56,20 @@ DataRow recentFileDataRow(RecentFile fileInfo) {
   return DataRow(
     cells: [
       DataCell(
-        Row(
-          children: [
-            SvgPicture.asset(
-              fileInfo.icon!,
-              height: 30,
-              width: 30,
-            ),
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 16),
-              child: Text(fileInfo.title!),
-            ),
-          ],
+        Expanded(
+          child: Row(
+            children: [
+              SvgPicture.asset(
+                fileInfo.icon!,
+                height: 30,
+                width: 30,
+              ),
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 16),
+                child: Text(fileInfo.title!, overflow: TextOverflow.ellipsis),
+              ),
+            ],
+          ),
         ),
       ),
       DataCell(Text(fileInfo.date!)),
