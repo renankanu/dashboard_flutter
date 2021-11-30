@@ -27,7 +27,7 @@ class RecentFiles extends StatelessWidget {
           SizedBox(
             width: double.infinity,
             child: DataTable2(
-              columnSpacing: 16,
+              columnSpacing: 6,
               minWidth: 600,
               columns: const [
                 DataColumn(
@@ -56,20 +56,23 @@ DataRow recentFileDataRow(RecentFile fileInfo) {
   return DataRow(
     cells: [
       DataCell(
-        Expanded(
-          child: Row(
-            children: [
-              SvgPicture.asset(
-                fileInfo.icon!,
-                height: 30,
-                width: 30,
+        Row(
+          children: [
+            SvgPicture.asset(
+              fileInfo.icon!,
+              height: 30,
+              width: 30,
+            ),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 16),
+              child: Expanded(
+                child: Text(
+                  fileInfo.title!,
+                  overflow: TextOverflow.ellipsis,
+                ),
               ),
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 16),
-                child: Text(fileInfo.title!, overflow: TextOverflow.ellipsis),
-              ),
-            ],
-          ),
+            ),
+          ],
         ),
       ),
       DataCell(Text(fileInfo.date!)),
