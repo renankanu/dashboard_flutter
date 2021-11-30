@@ -1,16 +1,16 @@
-# web_dashboard_docker
+# Flutter Dashboard
 
-A new Flutter project.
+Projeto para estudo web responsivo com flutter
 
-## Getting Started
+## Imagens
 
-This project is a starting point for a Flutter application.
+> 🖥 desktop
+> <img src="https://user-images.githubusercontent.com/67009935/144048345-301d9a8a-434c-48ad-9548-ef35ee24e41b.png">
 
-A few resources to get you started if this is your first Flutter project:
+> 🌐 Web
+> <img src="https://user-images.githubusercontent.com/67009935/144048922-34d58b1f-c02f-417b-bff1-d250a2831a94.png">
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+> 📱 Mobile
+> <img height="480" src="https://user-images.githubusercontent.com/67009935/144049414-5ad121b2-35bc-4b7d-8569-86084fd7a6b4.png">
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- [RenanKanu;](https://renankanu.com.br)
